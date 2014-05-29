@@ -21,31 +21,25 @@ header = Dir::glob("helper/header.html")
 footer = Dir::glob("helper/header.html")
 
 # removing all the files in html/
-`rm html/*`
+`rm html/*.*`
 
 # writing the files. header+content+footer, two column
 for name in names
-    puts 'Converting md to html, writing '+name+'.md to html/'+name+'.html'
+    puts 'Converting md to html, writing '+name+'.md to processed_md/'+name+'.html'
     html_name = name+'.html';
-    `rm -rf html/#{html_name}`
 
-    command = 'cat helper/header.html >> html/'+html_name; `#{command}`
-    command = 'echo "<div id=\'wrap\'>" >> html/'+html_name; `#{command}`
+    page = `cat helper/page.html`
+    page ['../index.html'] = 'processed_md/'+html_name
+    File.open('html/'+html_name, 'w'){|f| f.write(page)}
+    puts page
 
-    command = 'echo "<div id=\'header\'>" >> html/'+html_name; `#{command}`
-    command = 'echo "</div>" >> html/'+html_name; `#{command}`
+    command = 'multimarkdown '+name+'.md > html/processed_md/'+html_name
+    `#{command}`
 
-    command = 'echo "<div id=\'main\'>" >> html/'+html_name; `#{command}`
-    command = 'multimarkdown '+name+'.md >> html/'+name+'.html'; `#{command}`
-    command = 'echo "</div>" >> html/'+html_name; `#{command}`
-
-    command = 'echo "<div id=\'footer\'>" >> html/'+html_name; `#{command}`
-    command = 'cat helper/footer.html >> html/'+name+'.html'; `#{command}`
-    command = 'echo "</div>" >> html/'+html_name; `#{command}`
-
-    command = 'echo "</div>" >> html/'+html_name; `#{command}`
 end
 
-# copying the css file over
+`multimarkdown menu.md > html/menu.html`
 `cp -rf helper/style.css html/style.css`
+`cp -rf helper/header.html html/header.html`
+`cp -rf helper/jquery.js html/jquery.js`
 

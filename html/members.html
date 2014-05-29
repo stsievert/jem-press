@@ -1,20 +1,28 @@
 
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<html> 
+  <head> 
+    <!--loading header, content, footer-->
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#content").load("processed_md/members.html"); 
+      $("#footer").load("footer.html"); 
+      $("#menu").load("menu.html"); 
+    });
+    </script> 
+  </head> 
 
-<body>
+  <body> 
+     <div id="header"></div>
+     <div id="main">
+         <div id="content"></div>
+     </div>
+     <div id="footer"></div>
+     <div id="nav">
+         <div id="menu"></div>
+     </div>
+  </body> 
 
 
-<div id='wrap'>
-<div id='header'>
-</div>
-<div id='main'>
-<p>SCOTT SIEVERT&lt; AKSHAY SONI</p>
-</div>
-<div id='footer'>
-
-</body>
 </html>
-</div>
-</div>
