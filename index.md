@@ -7,6 +7,11 @@ def function(x):
     return x
 ```
 
-$x^2$
+$\exp\left[j \cdot \pi \right] + 1 = 0$
 
 > THIS IS A QUOTE
+
+| A | TABLE |
+|:-:|:-:|
+| yes | no |
+| two | three |
