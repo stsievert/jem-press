@@ -4,16 +4,16 @@ html {
 margin:0;
 padding:0;
 color:#000;
-background:#07a09a;
+background:#f6eeda;
 }
 #main {
-background:#9c9;
+background:#fff;
 float:right;
 width:80%;
 max-width:600px;
 }
 #nav {
-background:#090;
+background:#f6f6f6;
 float:left;
 width:20%;
 max-width:150:px;

@@ -21,12 +21,15 @@ header = Dir::glob("helper/header.html")
 footer = Dir::glob("helper/header.html")
 
 # removing all the files in html/
+`rm html/processed_md/*`
 `rm -rf html/*.*`
 
 # writing the files. header+content+footer, two column
 for name in names
     puts 'Converting md to html, writing '+name+'.md to processed_md/'+name+'.html'
     html_name = name+'.html';
+
+    `multimarkdown #{name}.md > html/processed_md/#{name}.html`
 
     page = `cat helper/page.html`
     page ['../index.html'] = 'processed_md/'+html_name
