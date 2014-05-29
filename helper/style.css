@@ -1,5 +1,11 @@
 
-body,
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 30px; }
 html {
 margin:0;
 padding:0;
@@ -9,19 +15,20 @@ background:#f6eeda;
 #main {
 background:#fff;
 float:right;
-width:80%;
-max-width:600px;
+width:75%;
+/*max-width:600px;*/
+padding: 2em;
 }
 #nav {
 background:#f6f6f6;
 float:left;
-width:18%;
-max-width:150:px;
+width:20%;
+max-width:150px;
 text-align:center;
 border:1px dashed black;
 }
 #wrap {
-width:750px;
+width:100%;
 margin:0 auto;
 background:#90c;
 }
@@ -32,7 +39,7 @@ background:#90c;
     display:table;
     margin-left: auto;
     margin-right: auto;
-    width: 46em;
+    width: 100%;
 }
 
 a {
