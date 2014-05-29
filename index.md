@@ -7,4 +7,6 @@ def function(x):
     return x
 ```
 
+$x^2$
+
 > THIS IS A QUOTE

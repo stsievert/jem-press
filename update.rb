@@ -5,10 +5,12 @@
 #   This will convert everything in the same folder as this file to html (using
 #   multimarkdown) and write it, with a header and footer and css, to
 #   html/filename.html
+#
+#   I think I should have a jQuery page in helper that has basic content. Then
+#   find-and-replace stuff
 
 markdown_files = Dir::glob("*.md")
 html_files = Dir::glob("html/*.html")
-puts html_files
 
 names = []
 for file in markdown_files
@@ -23,19 +25,14 @@ footer = Dir::glob("helper/header.html")
 
 # writing the files. header+content+footer, two column
 for name in names
-    puts 'Converting md to html and writing '+name+'.md to html/'+name+'.html'
+    puts 'Converting md to html, writing '+name+'.md to html/'+name+'.html'
     html_name = name+'.html';
     `rm -rf html/#{html_name}`
 
-    command = 'echo "<p><link rel=\"stylesheet\" type=\"text/css\" href=\"helper/style.css\"></p>" >> html/'+html_name; `#{command}`
-    puts command
-
-
-
+    command = 'cat helper/header.html >> html/'+html_name; `#{command}`
     command = 'echo "<div id=\'wrap\'>" >> html/'+html_name; `#{command}`
 
     command = 'echo "<div id=\'header\'>" >> html/'+html_name; `#{command}`
-    command = 'cat helper/header.html >> html/'+html_name; `#{command}`
     command = 'echo "</div>" >> html/'+html_name; `#{command}`
 
     command = 'echo "<div id=\'main\'>" >> html/'+html_name; `#{command}`

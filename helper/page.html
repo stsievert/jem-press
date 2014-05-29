@@ -1,0 +1,28 @@
+
+<html> 
+  <head> 
+    <!--loading header, content, footer-->
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#content").load("../index.html"); 
+      $("#footer").load("footer.html"); 
+      $("#menu").load("menu.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="header"></div>
+     <div id="main">
+         <div id="content"></div>
+     </div>
+     <div id="footer"></div>
+     <div id="nav">
+         <div id="menu"></div>
+     </div>
+  </body> 
+
+
+</html>

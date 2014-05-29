@@ -1,2 +1,25 @@
 
-h3 {background-color:#6495ed;}
+body,
+html {
+margin:0;
+padding:0;
+color:#000;
+background:#07a09a;
+}
+#main {
+background:#9c9;
+float:right;
+width:80%;
+max-width:600px;
+}
+#nav {
+background:#090;
+float:left;
+width:20%;
+max-width:150:px;
+}
+#wrap {
+width:750px;
+margin:0 auto;
+background:#90c;
+}
