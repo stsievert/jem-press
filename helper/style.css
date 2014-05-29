@@ -23,3 +23,12 @@ width:750px;
 margin:0 auto;
 background:#90c;
 }
+#nav,#wrap{
+    display:table-cell;
+}
+#cols{
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 46em;
+}

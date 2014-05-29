@@ -21,7 +21,7 @@ header = Dir::glob("helper/header.html")
 footer = Dir::glob("helper/header.html")
 
 # removing all the files in html/
-`rm html/*.*`
+`rm -rf html/*.*`
 
 # writing the files. header+content+footer, two column
 for name in names
@@ -31,13 +31,9 @@ for name in names
     page = `cat helper/page.html`
     page ['../index.html'] = 'processed_md/'+html_name
     File.open('html/'+html_name, 'w'){|f| f.write(page)}
-    puts page
-
-    command = 'multimarkdown '+name+'.md > html/processed_md/'+html_name
-    `#{command}`
-
 end
 
+`cp -rf images/ html/processed_md/images/ `
 `multimarkdown menu.md > html/menu.html`
 `cp -rf helper/style.css html/style.css`
 `cp -rf helper/header.html html/header.html`
