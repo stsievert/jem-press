@@ -64,7 +64,7 @@ An image!
 
  ![image][]
 
-[image]:images/shuttle.jpg "Image title" width=200px height=200px align=center
+[image]:images/space-shuttle.jpg "Image title" width=200px height=200px align=center
 ```
 
 > An image!
@@ -79,18 +79,18 @@ to center an image.
 
 ```
 <p style="text-align: center;">
-<img src="images/shuttle.jpg" width=200 height=200>
+<img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 ```
 <p style="text-align: center;">
-<img src="images/shuttle.jpg" width=200 height=200>
+<img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 
 ## LaTeX
 jem-press uses MathJax to render LaTeX. That means you use `$` for inline and
 `$$` for a separate paragraph, just like normal latex.
 
-[image]:images/shuttle.jpg "Image title" width=200px height=200px
+[image]:images/space-shuttle.jpg "Image title" width=200px height=200px
 [url-img]:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img
 [multi-docs]:http://fletcher.github.io/peg-multimarkdown/
 [markdown]:https://en.wikipedia.org/wiki/Markdown
