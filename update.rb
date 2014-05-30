@@ -9,7 +9,7 @@
 #   I think I should have a jQuery page in helper that has basic content. Then
 #   find-and-replace stuff
 
-markdown_files = Dir::glob("*.md")
+markdown_files = Dir::glob("content/*.md")
 html_files = Dir::glob("html/*.html")
 
 names = []
@@ -29,7 +29,7 @@ for name in names
     puts 'Converting md to html, writing '+name+'.md to processed_md/'+name+'.html'
     html_name = name+'.html';
 
-    `multimarkdown #{name}.md > html/processed_md/#{name}.html`
+    `multimarkdown content/#{name}.md > html/processed_md/#{name}.html`
 
     page = `cat helper/page.html`
     page ['../index.html'] = 'processed_md/'+html_name
