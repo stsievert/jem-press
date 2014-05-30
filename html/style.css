@@ -1,18 +1,21 @@
-/*css from https://gist.github.com/andyferra/2554919*/
+/*css from https://gist.github.com/andyferra/2554919. Small changes made*/
 body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
+  /*font-family: Helvetica, arial, sans-serif;*/
+    font-family: Georgia, serif;
+  font-size: 18px;
   line-height: 1.6;
-  padding-top: 10px;
+  padding-top: 2px;
   padding-bottom: 10px;
-  background-color: #fdfdea;
-  padding: 30px; }
+  background-color: white;
+  /*padding: 30px; }*/
+}
 
 body > *:first-child {
   margin-top: 0 !important; }
 body > *:last-child {
   margin-bottom: 0 !important; }
 
+/*Scott made .cols, .left, .right, .right h5 .right p*/
 .cols{
     height: auto;
     overflow: hidden;
@@ -26,10 +29,34 @@ body > *:last-child {
 .right{
     width: 180px;
     float: left;
-    background: #dddddd;
+    background: #f6f6f6;
     max-width: 600px;
-    border: 1px dashed black;
-    text-align: center;
+    border: 1px solid #aaaaaa;
+    text-align: left;
+
+    font-size: 0.9em;
+    line-height: 0.6em;
+    height: 100%;
+}
+
+.right h3{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+    border-bottom: 1px solid;
+    line-height: 1.1em;
+}
+.right p{
+    padding-left: 20px;
+    /*color: red !important;*/
+}
+.right a{
+    text-decoration: none;
+}
+.right a:hover{
+    color: #244fb3;
+    border-bottom: 1px dotted black;
 }
 p, blockquote, ul, ol, dl, li, table, pre {
   margin: 15px; }

@@ -36,7 +36,7 @@ for name in names
     File.open('html/'+html_name, 'w'){|f| f.write(page)}
 end
 
-`cp -rf images/ html/processed_md/images/ `
+`cp -rf images/ html/images/ `
 `multimarkdown menu.md > html/menu.html`
 `cp -rf helper/style.css html/style.css`
 `cp -rf helper/header.html html/header.html`
