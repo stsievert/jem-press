@@ -4,12 +4,13 @@ GUIs and look at [Octopress][octo], [Jekyll][jekyll] and other blog-sensitive
 [site generators][site], but they're not right. You look at [jemdoc][jemdoc],
 [harp][harp] and [wintersmith][winter], but they all seem too complex (though
 jemdoc the least complex). You just want to write your content, have it look
-decent and publish it. You don't want to mess around with themes or CSS files.
+decent by default and publish it. You don't want to mess around with themes or CSS files.
 
-jem-press does just that. It takes content written with Markdown and
-makes a static (and not blog-sensitive) website that looks something like
-[this][jem-press-ex]. Good examples of sites that could use this are academic
-websites, as they're normally just a bunch of static pages.
+jem-press does just that. It takes content written with Markdown and makes a
+static (and not blog-sensitive) website that looks something like
+[this][jem-press-ex] without any configuration. Good examples of sites that
+could use this are academic websites, as they're normally just a bunch of
+static pages.
 
 jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and
 hence the name). The main differences are jem-press uses the popular Markdown

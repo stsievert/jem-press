@@ -19,7 +19,7 @@ body {
     /*really the right column*/
     /*float shouldn't be touched for two column*/
     float: none;
-    background: #ffffff;
+    /*background: #ffffff;*/
     /*sticks to left side of page*/
     width: auto;
     /*overflow should stay hidden*/
@@ -62,6 +62,17 @@ body {
     /*menu link hover -- change color, dotted underline*/
     color: #244fb3;
     border-bottom: 1px dotted black;
+}
+@media screen and (max-width: 530px) {
+    .left{
+        clear: both;
+    }
+    .right{
+        clear: both;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
 }
 /*everything below this is github css to make content look decent*/
 /*github css from https://gist.github.com/andyferra/2554919. Small changes made to margin*/
