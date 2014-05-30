@@ -1,0 +1,96 @@
+<p>To get started with jem-press, download <a href="https://github.com/scottsievert/jem-press/archive/master.zip">this <code>zip</code> file</a>. This contains
+a sample site, but it&#8217;s pretty simple to change and provides a good reference
+to base your site off of. All your content is in
+<code>content/</code> and if you run <code>ruby update.rb</code>, it will publish your site,
+formatting and everything included.</p>
+
+<h2 id="content">Content</h2>
+
+<p>Edit the files in <code>content</code> to change your content using the popular
+<a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> mark-up language, specifically the <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>
+flavor.</p>
+
+<ol>
+<li>Create new files, <code>content/new_name.md</code>. It should end in <code>.md</code> to be processed.</li>
+<li>Edit <code>content/menu.md</code> to include the menu. This is purely markdown flavored
+ and accepts relative links.</li>
+<li>Run <code>ruby update.rb</code> to publish to <code>html/</code>. These files can be viewed on
+ your computer and can also live on a server. This ruby file processes every
+ markdown file in <code>content</code>, links images in <code>images</code> (subfolders included!)
+ and puts the completed files into <code>html</code>.</li>
+</ol>
+
+<p>Of course, any of the hard and fast rules can be undone by editing the
+<code>update.rb</code> file. You can change folder names (<code>content</code>, <code>html</code>, <code>images</code>,
+etc) or specific file names (<code>menu.md</code>, <code>header.html</code>).</p>
+
+<p>If you want to further customize, you can edit the CSS file (which is
+well-commented!) or edit <code>header.html</code>.</p>
+
+<h2 id="menu">Menu</h2>
+
+<p>The menu is contained in the file <code>content/menu.md</code> and is pure markdown. To
+include links, use the appropriate syntax with relative links: </p>
+
+<pre><code>[Link text](relative_file.html)
+
+[Another link](relative_file2.html)
+</code></pre>
+
+<p>Note that markdown needs a new line to keep paragraphs separate.</p>
+
+<p>Instead of using the extension <code>.md</code> on your file links, you should use the
+extension <code>.html</code>. That makes it easier for the ruby script.</p>
+
+<h3 id="sections">Sections</h3>
+
+<p>Per markdown formatting, you can include any size header. But, the CSS is
+formatted to accept <code>h3</code>. That is, use <code>###</code>.</p>
+
+<pre><code>### Good looking section title
+[Link text](relative_file.html)
+
+[Another link](relative_file2.html)
+</code></pre>
+
+<p>Oh, and an h2 or <code>## Section</code> has that nice underline.</p>
+
+<h2 id="images">Images</h2>
+
+<p>Images are the reason we use MultiMarkdown because you can include
+width/height/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img">any URL tag</a>.</p>
+
+<p>That is, it&#8217;s possible to specify where and how large the image should be.</p>
+
+<pre><code>An image!
+
+ ![image][]
+
+[image]:images/shuttle.jpg &quot;Image title&quot; width=200px height=200px align=center
+</code></pre>
+
+<blockquote>
+<p>An image!</p>
+
+<p><img src="images/shuttle.jpg" alt="image" id="image" title="Image title" style="height:200px;width:200px;" /></p>
+</blockquote>
+
+<p>Note that this <code>![image][]</code> expects the image to be inline, otherwise you get a
+caption of <code>image</code> (why? beats me). To fix this, I just put a space before <code>!</code>.</p>
+
+<p>Luckily, any HTML is valid in markdown, meaning it&#8217;s relatively straightforward
+to center an image.</p>
+
+<pre><code>&lt;p style=&quot;text-align: center;&quot;&gt;
+&lt;img src=&quot;images/shuttle.jpg&quot; width=200 height=200&gt;
+&lt;/p&gt;
+</code></pre>
+
+<p style="text-align: center;">
+<img src="images/shuttle.jpg" width=200 height=200>
+</p>
+
+<h2 id="latex">LaTeX</h2>
+
+<p>jem-press uses MathJax to render LaTeX. That means you use <code>$</code> for inline and
+<code>$$</code> for a separate paragraph, just like normal latex.</p>
