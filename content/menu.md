@@ -1,5 +1,5 @@
 <p style="text-align: center;">
-<img src="images/space-shuttle.jpg" width=150 height=150>
+<img src="images/print.png" width=150 height=150>
 </p>
 
 ### jem-press
