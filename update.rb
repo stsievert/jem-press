@@ -21,8 +21,8 @@ header = Dir::glob("helper/header.html")
 footer = Dir::glob("helper/header.html")
 
 # removing all the files in html/
-`rm html/processed_md/*`
-`rm -rf html/*.*`
+#`rm html/processed_md/*`
+#`rm -rf html/*.*`
 
 # writing the files. header+content+footer, two column
 for name in names
