@@ -8,7 +8,8 @@ decent and publish it. You don't want to mess around with themes or CSS files.
 
 jem-press does just that. It takes content written with Markdown and
 makes a static (and not blog-sensitive) website that looks something like
-[this][jem-press-ex].
+[this][jem-press-ex]. Good examples of sites that could use this are academic
+websites, as they're normally just a bunch of static pages.
 
 jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and
 hence the name). The main differences are jem-press uses the popular Markdown
@@ -34,6 +35,7 @@ jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRAN
 for more details.
 </p>
 
+[jem-press-ex]:http://scottsievert.github.io/jem-press/
 [gnu]:http://www.gnu.org/licenses/gpl-3.0.html
 [other]:http://staticsitegenerators.net
 [harp]:http://harpjs.com/docs/quick-start
