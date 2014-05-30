@@ -27,7 +27,7 @@ OptionParser.new do |opts|
         exit; 
     end
     opts.on('-p', '--publish', 'Write HTML files to jem-press/ and exit') do
-        `cp html/* .`
+        `cp -rf html/* .`
         exit
     end
 end.parse!

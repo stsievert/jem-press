@@ -15,6 +15,9 @@ jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and
 hence the name). The main differences are jem-press uses the popular Markdown
 and requires no configuration: you just start writing content.
 
+jem-press is designed to be *easy.* Complexity hurts ease... or you could say
+ease is inversely proportional to complexity, hence the menu image.
+
 ## Features
 * simple, feature minimal (deliberately!)
 * no configuration necessary. However, CSS file is well commented (and
