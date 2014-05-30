@@ -28,10 +28,10 @@ and requires no configuration: you just start writing content.
 #### License
 
 <p style="font-size: 10pt">
-Copyright © 2014 Scott Sievert<br><br>
+Copyright © 2014 Scott Sievert<br>
 
 jem-press is free software; you can redistribute it and/or modify it under the
-terms of the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>  as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. <br><br>
+terms of the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>  as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. <br>
 
 jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
 <!--[GNU General Public License][gnu] -->
