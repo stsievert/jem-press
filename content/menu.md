@@ -11,3 +11,5 @@
 
 [contact](contact.html)
 
+[latex](latex.html)
+
