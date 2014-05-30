@@ -17,13 +17,18 @@ about = { "version" => "0.2",
 options = {}
 OptionParser.new do |opts|
     opts.banner = "Usage: 
-    `ruby update.rb`. Processes every *.md file in content/ and writes a complete website to html/ including styling. 
+    `ruby update.rb`. Processes every *.md file in content/ and writes a complete 
+     website to html/ including styling. 
     
     The menu is assumed to named menu.md and images are assumed to live in content/images/
     "
     opts.on('-v', '--version', 'Print version and exit') do 
         puts "version "+about['version']; 
         exit; 
+    end
+    opts.on('-p', '--publish', 'Write HTML files to jem-press/ and exit') do
+        `cp html/* .`
+        exit
     end
 end.parse!
 
