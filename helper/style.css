@@ -1,0 +1,15 @@
+
+.parent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.cols {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    
+    padding: 1em;
+    border: solid;
+}
