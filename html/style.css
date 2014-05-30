@@ -19,20 +19,14 @@ body > *:last-child {
 .cols{
     height: auto;
     overflow: hidden;
-    float: left;
-    width: 100%;
-    /*background: images/white.png repeat-y;*/
-    display: flex;
 }
 .left{
-    flex: 1;
     float: none;
     background: #ffffff;
     width: auto;
     overflow: hidden
 }
 .right{
-    flex: 1;
     width: 180px;
     float: left;
     background: #f6f6f6;
@@ -42,8 +36,9 @@ body > *:last-child {
 
     font-size: 0.9em;
     line-height: 0.6em;
-    /*height: 300%;*/
+    height: 100%;
 }
+
 .right h3{
     color: black;
     text-decoration: none;
