@@ -1,5 +1,5 @@
 
-### Latex
+## Latex
 Latex is what people use to write pretty mathematical expressions. If you're
 still reading, you probably know what latex is and don't need a primer.
 

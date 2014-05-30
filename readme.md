@@ -1,8 +1,6 @@
 
-### todo
-* edit menu link underline
-    * like jemdoc
-* figure out menu height?
+
+
 
 Jem-press is inspired by [Octopress][octo] and [jem-doc][jem], hence the name.
 I like Octopress for all the customization and options, but it's lacking

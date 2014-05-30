@@ -15,10 +15,14 @@ jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and
 hence the name). The main differences are jem-press uses the popular Markdown
 and requires no configuration: you just start writing content.
 
-### Goals
-* Usability -- jem-press takes content written in Markdown and publishes that
-  content with a CSS file. No configuration is necessary (although can be
-  added!).
+## Features
+* simple, feature minimal (deliberately!)
+* no configuration necessary. However, CSS file is well commented (and
+  hopefully easy to modify).
+* easy to pick up
+* popular markdown formatting
+* easy for academic/static sites
+* not blog sensitive
 * $\LaTeX$ equation support
 
 #### License

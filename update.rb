@@ -5,9 +5,27 @@
 #   This will convert everything in the same folder as this file to html (using
 #   multimarkdown) and write it, with a header and footer and css, to
 #   html/filename.html
-#
-#   I think I should have a jQuery page in helper that has basic content. Then
-#   find-and-replace stuff
+ 
+require 'optparse'
+
+about = { "version" => "0.2",
+          "author" => "Scott Sievert",
+          "author_email" => "sieve121@umn.edu",
+          "homepage" => "http://scottsievert.github.io/jem-press/"
+        }
+
+options = {}
+OptionParser.new do |opts|
+    opts.banner = "Usage: 
+    `ruby update.rb`. Processes every *.md file in content/ and writes a complete website to html/ including styling. 
+    
+    The menu is assumed to named menu.md and images are assumed to live in content/images/
+    "
+    opts.on('-v', '--version', 'Print version and exit') do 
+        puts "version "+about['version']; 
+        exit; 
+    end
+end.parse!
 
 markdown_files = Dir::glob("content/*.md")
 html_files = Dir::glob("html/*.html")
@@ -25,8 +43,9 @@ footer = Dir::glob("helper/header.html")
 `rm -rf html/*.*`
 
 # writing the files. header+content+footer, two column
+puts 'Processing'
 for name in names
-    puts 'Converting md to html, writing '+name+'.md to processed_md/'+name+'.html'
+    puts '    content/'+name+'.md'
     html_name = name+'.html';
 
     `multimarkdown content/#{name}.md > html/processed_md/#{name}.html`
