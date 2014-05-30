@@ -21,12 +21,18 @@ and requires no configuration: you just start writing content.
 * $\LaTeX$ equation support
 
 #### License
-Copyright © 2014 Scott Sievert
+
+<p style="font-size: 10pt">
+Copyright © 2014 Scott Sievert<br><br>
 
 jem-press is free software; you can redistribute it and/or modify it under the
-terms of the [GNU General Public License][gnu] as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+terms of the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>  as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. <br><br>
 
-jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License][gnu] for more details.
+jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+<!--[GNU General Public License][gnu] -->
+<a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>
+for more details.
+</p>
 
 [gnu]:http://www.gnu.org/licenses/gpl-3.0.html
 [other]:http://staticsitegenerators.net
