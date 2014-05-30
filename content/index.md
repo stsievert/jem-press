@@ -15,9 +15,10 @@ hence the name). The main differences are jem-press uses the popular Markdown
 and requires no configuration: you just start writing content.
 
 ### Goals
-* $\LaTeX$ equation support (through MathJax).
-* Usability. jem-press takes content written in Markdown and publishes that
-  content with a CSS file.
+* Usability -- jem-press takes content written in Markdown and publishes that
+  content with a CSS file. No configuration is necessary (although can be
+  added!).
+* $\LaTeX$ equation support
 
 #### License
 Copyright © 2014 Scott Sievert
