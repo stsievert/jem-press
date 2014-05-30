@@ -17,11 +17,12 @@ body > *:last-child {
 
 /*Scott made .cols, .left, .right, .right h5 .right p*/
 .cols{
-    height: auto;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 .left{
-    float: none;
+    float: none; 
     background: #ffffff;
     width: auto;
     overflow: hidden
@@ -36,7 +37,7 @@ body > *:last-child {
 
     font-size: 0.9em;
     line-height: 0.6em;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .right h3{
