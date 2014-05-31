@@ -4,7 +4,7 @@ body {
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.6;
-  padding-top: 2px;
+  padding-top: 0px;
   padding-bottom: 10px;
   background-color: white;
   /*if you want padding on the borders of the screen*/
@@ -14,31 +14,35 @@ body {
     /*container for both columns. changes (I don't think) apply*/
     height: auto;
     overflow: hidden;
+    margin: 0 auto;
 }
 .left{
     /*really the right column*/
     /*float shouldn't be touched for two column*/
-    float: none;
-    /*background: #ffffff;*/
+    float: left;
+    /*content background*/
+    background: #ffffff;
     /*sticks to left side of page*/
     width: auto;
     /*overflow should stay hidden*/
     overflow: hidden;
+    /*border width is really menu width*/
+    border-left: 189px solid #f6f6f6;
 }
 .right{
     /*really the menu/left column*/
     width: 180px;
     float: left;
-    /*menu background color*/
-    background: #f6f6f6;
-    border: 1px solid #aaaaaa;
+    margin-right: -180px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    /*border-right: 1px solid black;*/
+    /*border: 1px solid #aaaaaa;*/
     text-align: left;
     /*how large are the menu links?*/
     font-size: 0.9em;
     line-height: 0.6em;
-    /*how tall is the menu? I tried to make this the height of content but too*/
-    /*hard for me, inexperienced in CSS*/
-    height: 100%;
 }
 .right h3{
     /*the menu section formatting*/
@@ -73,12 +77,15 @@ ul {
 @media screen and (max-width: 530px) {
     .left{
         clear: both;
+        border: 0px solid black;
+        width: 100%;
     }
     .right{
         clear: both;
         height: auto;
         width: 100%;
         text-align: center;
+        background: #f6f6f6;
     }
 }
 
