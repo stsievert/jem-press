@@ -1,0 +1,105 @@
+body {
+    /*fonts to use globally*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: white;
+  /*to have page hug screen*/
+  padding: 0px !important;
+  margin: 0px !important;
+  background: #e0e0e0;
+  <!--background-image:url('texture.png');-->
+  <!--background-repeat:repeat-y repeat-x;-->
+  <!--background-size: 10%;-->
+}
+.cols{
+    /*container for both columns.*/
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.left{
+    /*really the right column*/
+    /*float shouldn't be touched for two column*/
+    float: left;
+    /*content background*/
+    background: #ffffff;
+    width: -webkit-calc(100% - 180px); 
+    width:    -moz-calc(100% - 180px); 
+    width:      -o-calc(100% - 180px); 
+    /*overflow should stay hidden*/
+    overflow: hidden;
+    /*border width is really menu width*/
+    border-left: 181px solid #f6f6f6;
+}
+.right{
+    /*really the menu/left column*/
+    width: 180px;
+    float: left;
+    margin-right: -190px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+
+    text-align: left;
+    /*how large are the menu links?*/
+    font-size: 0.9em;
+    line-height: 0.6em;
+}
+.left2{
+    /*the menu-content border*/
+    border-left: 1px solid #aaa;
+    /*to get the border to work out right*/
+    margin-top: -15px;
+    padding-bottom: 20px;
+    /*padding-top: -10px;*/
+}
+.right h3{
+    /*the menu section formatting*/
+    /*black, 1px underline*/
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    border-bottom: 1px solid;
+    line-height: 1.1em;
+}
+.right p{
+    /*menu paragraph section. for indent*/
+    padding-left: 10px;
+    font-size: 13pt;
+}
+.right a{
+    /*menu link section. for decoration*/
+    text-decoration: none;
+}
+.right a:hover{
+    /*menu link hover -- change color, dotted underline*/
+    color: #244fb3;
+    border-bottom: 1px dotted black;
+}
+
+ul {
+    line-height: 1.25em;
+}
+
+/*use this config if you're want a menu on top of the content. You could set max-width to 10,000 or do it the right way... I'm guessing you'll go with 10,000.*/
+@media screen and (max-width: 630px) {
+    .left{
+        clear: both;
+        border: 0px solid black;
+        width: 100%;
+        border-left: none;
+    }
+    .right{
+        clear: both;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #aaa;
+        background: #f6f6f6;
+    }
+}
+
