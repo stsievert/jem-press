@@ -8,6 +8,8 @@ $$\hspace{-2em}\huge e \propto \frac{1}{c}$$
 
 [install](install.html)
 
+[command line](command_line.html)
+
 [getting started](getting_started.html)
 
 [configuring](configuring.html)

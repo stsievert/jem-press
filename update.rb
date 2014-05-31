@@ -32,7 +32,24 @@ OptionParser.new do |opts|
     end
     opts.on('-r', '--remove-install', 'Remove the install. Delete all the *.html files from jem-press/') do
         files = Dir::glob("*.html")
-        print files
+        puts 'Removing...'
+        for file in files
+            puts '    '+file
+            `rm #{file}`
+        end
+        all_files = Dir::glob('*')
+        if all_files.include? 'processed_md'
+            puts '    processed_md/'
+            `rm -rf processed_md`
+        end
+        if all_files.include? 'style.css'
+            puts '    style.css'
+            `rm style.css`
+        end
+        if all_files.include? 'jquery.js'
+            puts '    jquery.js'
+            `rm jquery.js`
+        end
         exit
     end
 

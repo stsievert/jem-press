@@ -17,7 +17,9 @@ hence the name). The main differences are jem-press uses the popular Markdown
 and requires no configuration: you just start writing content.
 
 jem-press is designed to be *easy.* Complexity hurts ease... or you could say
-ease is inversely proportional to complexity, hence the menu image.
+ease is inversely proportional to complexity, hence the menu image. This site
+generator is designed for you to create a site with ease and to customize the
+site with almost equal ease.
 
 ## Features
 * simple, feature minimal (deliberately!)
