@@ -88,4 +88,5 @@ end
 `cp -rf helper/style.css html/style.css`
 `cp -rf helper/header.html html/header.html`
 `cp -rf helper/jquery.js html/jquery.js`
+`cp -rf helper/github.css html/github.css`
 

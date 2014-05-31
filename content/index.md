@@ -1,3 +1,4 @@
+## jem-press
 
 You want to create a simple website. You don't want to mess around with any
 GUIs and look at [Octopress][octo], [Jekyll][jekyll] and other blog-sensitive
@@ -23,10 +24,9 @@ site with almost equal ease.
 
 ## Features
 * simple, feature minimal (deliberately!)
+* mobile friendly
 * no configuration necessary. However, CSS file is well commented (and
   hopefully easy to modify).
-* easy to pick up
-* mobile friendly
 * popular markdown formatting
 * easy for academic/static sites
 * not blog sensitive
