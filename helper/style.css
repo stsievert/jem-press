@@ -13,14 +13,13 @@ body {
 .cols{
     /*container for both columns. changes (I don't think) apply*/
     height: auto;
-    background: #555;
     overflow: hidden;
 }
 .left{
     /*really the right column*/
     /*float shouldn't be touched for two column*/
-    float: left;
-    background: #ffffff;
+    float: none;
+    /*background: #ffffff;*/
     /*sticks to left side of page*/
     width: auto;
     /*overflow should stay hidden*/
