@@ -69,6 +69,7 @@ ul {
     line-height: 1.25em;
 }
 
+/*use this config if you're want a menu on top of the content. You could set max-width to 10,000 or do it the right way... I'm guessing you'll go with 10,000.*/
 @media screen and (max-width: 530px) {
     .left{
         clear: both;

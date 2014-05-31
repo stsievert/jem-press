@@ -8,7 +8,7 @@
  
 require 'optparse'
 
-about = { "version" => "0.2",
+about = { "version" => "0.11",
           "author" => "Scott Sievert",
           "author_email" => "sieve121@umn.edu",
           "homepage" => "http://scottsievert.github.io/jem-press/"
@@ -87,6 +87,7 @@ end
 `multimarkdown content/menu.md > html/menu.html`
 `cp -rf helper/style.css html/style.css`
 `cp -rf helper/header.html html/header.html`
+`cp -rf helper/footer.html html/footer.html`
 `cp -rf helper/jquery.js html/jquery.js`
 `cp -rf helper/github.css html/github.css`
 

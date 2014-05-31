@@ -1,9 +1,10 @@
 ## Bugs
 * The menu background color doesn't go to the bottom of the screen if content
   lengthy (ie, as in [getting started](getting_started.html)).
-* Menu image still not perfectly centered.
+* No dates in footer.
 
 ## Versions
+* 0.11: Menu image centered, footer bug fixed.
 * 0.1: Initial release, almost ready for consumption. Docs in decent shape,
   command-line options working, mobile-friendly, $\LaTeX$ support and more. To
   add:

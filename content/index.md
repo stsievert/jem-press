@@ -7,20 +7,21 @@ GUIs and look at [Octopress][octo], [Jekyll][jekyll] and other blog-sensitive
 jemdoc the least complex). You just want to write your content, have it look
 decent by default and publish it. You don't want to mess around with themes or CSS files.
 
-jem-press does just that. It takes content written with Markdown and makes a
-static (and not blog-sensitive) website that looks something like
-[this][jem-press-ex] without any configuration. Good examples of sites that
-could use this are academic websites, as they're normally just a bunch of
-static pages.
+jem-press just does that. You write your content in Markdown, run `ruby
+update.rb` and boom. Your site is in `html`, completely formatted. Prime
+candidates seem to be simple and blog-free websites, such as academic websites.
 
-jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and
-hence the name). The main differences are jem-press uses the popular Markdown
-and requires no configuration: you just start writing content.
+jem-press is designed to be *easy.* Complexity and ease seem to opose each
+other. This site generator is designed for you to create a site with ease and to
+customize the site with almost equal ease (or certainly less pain than before).
 
-jem-press is designed to be *easy.* Complexity hurts ease... or you could say
-ease is inversely proportional to complexity, hence the menu image. This site
-generator is designed for you to create a site with ease and to customize the
-site with almost equal ease.
+jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and hence the
+name). The main differences are jem-press uses the popular Markdown and
+requires no configuration: you just start writing content. jemdoc uses a
+not-very-popular markup syntax and requires some initial setup. Octopress is
+easy to use but is blog aware and doesn't seem right for these simple website.
+If the two had a child, they would name it jem-press.
+
 
 ## Features
 * simple, feature minimal (deliberately!)
