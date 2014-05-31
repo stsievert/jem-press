@@ -44,6 +44,9 @@ body {
     font-size: 0.9em;
     line-height: 0.6em;
 }
+.left2{
+    border-left: 1px solid #aaa;
+}
 .right h3{
     /*the menu section formatting*/
     /*black, 1px underline*/

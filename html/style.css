@@ -22,7 +22,6 @@ body {
     /*content background*/
     background: #ffffff;
     /*sticks to left side of page*/
-    /*width: auto;*/
     width: 75%;
     /*overflow should stay hidden*/
     overflow: hidden;
@@ -44,6 +43,9 @@ body {
     /*how large are the menu links?*/
     font-size: 0.9em;
     line-height: 0.6em;
+}
+.left2{
+    border-left: 1px solid #aaa;
 }
 .right h3{
     /*the menu section formatting*/
