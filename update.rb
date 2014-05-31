@@ -8,12 +8,18 @@
  
 require 'optparse'
 
-about = { "version" => "0.11",
+about = { "version" => "0.21",
           "author" => "Scott Sievert",
           "author_email" => "sieve121@umn.edu",
           "homepage" => "http://scottsievert.github.io/jem-press/"
         }
 
+def remove(filename)
+    if Dir::glob('*').include? filename
+        puts '    '+filename
+        `rm -rf #{filename}`
+    end
+end
 options = {}
 OptionParser.new do |opts|
     opts.banner = "Usage: 
@@ -34,22 +40,15 @@ OptionParser.new do |opts|
         files = Dir::glob("*.html")
         puts 'Removing...'
         for file in files
-            puts '    '+file
-            `rm #{file}`
+            remove(file)
         end
         all_files = Dir::glob('*')
-        if all_files.include? 'processed_md'
-            puts '    processed_md/'
-            `rm -rf processed_md`
-        end
-        if all_files.include? 'style.css'
-            puts '    style.css'
-            `rm style.css`
-        end
-        if all_files.include? 'jquery.js'
-            puts '    jquery.js'
-            `rm jquery.js`
-        end
+        remove('processed_md')
+        remove('style.css')
+        remove('solarized.css')
+        remove('github.css')
+        remove('jquery.js')
+        remove('texture.png')
         exit
     end
     opts.on('-n', '--new-post', 'Create a new page and open the  corresponding markdown file 
