@@ -16,3 +16,5 @@ look in the `update.rb` file.
   To change that, at least on a Mac, see [this link][default]. This doesn't
   support spaces in the filename and doesn't need the `.md` extenstion. Example
   `ruby update.rb new_post`.
+
+[default]:http://computers.tutsplus.com/tutorials/quick-tip-how-to-change-the-default-application-to-open-files--mac-51413
