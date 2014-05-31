@@ -13,15 +13,15 @@ candidates seem to be simple and blog-free websites, such as academic websites.
 
 jem-press is designed to be *easy.* Complexity and ease seem to opose each
 other. This site generator is designed for you to create a site with ease and to
-customize the site with almost equal ease (or certainly less pain than before).
+customize the site with almost equal ease to a small degree. If you're
+interested in drastically changing the site, jem-press is not for you.
 
-jem-press was inspired by [jemdoc][jemdoc] and [octopress][octo] (and hence the
-name). The main differences are jem-press uses the popular Markdown and
+If [Octopress][octo] and [jemdoc][jemdoc] had a child, they would name it
+jem-press. It would combine the convince of jemdoc with the functionality of
+Octopress. The main differences are jem-press uses the popular Markdown and
 requires no configuration: you just start writing content. jemdoc uses a
-not-very-popular markup syntax and requires some initial setup. Octopress is
+not-very-popular markup syntax and requires some initial setup.  Octopress is
 easy to use but is blog aware and doesn't seem right for these simple website.
-If the two had a child, they would name it jem-press.
-
 
 ## Features
 * simple, feature minimal (deliberately!)
