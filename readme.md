@@ -1,7 +1,5 @@
 
-
-
-
+## jem-press
 Jem-press is inspired by [Octopress][octo] and [jem-doc][jem], hence the name.
 I like Octopress for all the customization and options, but it's lacking
 deliberately feature-poor simplicity of jem-doc. However, jem-doc doesn't use
@@ -17,6 +15,11 @@ is to download this repo and change the markdown files. Everything else is
 taken care of -- CSS, LaTeX equations, etc. Extensive documentation can be
 found on the wiki.
 
+#### Sample site
+The [jem-press documentation site][jem-press] is written in jem-press itself.
+
+
+[jem-press]:http://scottsievert.github.io/jem-press/
 [octo]:http://octopress.org
 [jem]:http://jemdoc.jaboc.net/index.html
 
