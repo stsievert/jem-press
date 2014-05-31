@@ -30,6 +30,12 @@ OptionParser.new do |opts|
         `cp -rf html/* .`
         exit
     end
+    opts.on('-r', '--remove-install', 'Remove the install. Delete all the *.html files from jem-press/') do
+        files = Dir::glob("*.html")
+        print files
+        exit
+    end
+
 end.parse!
 
 markdown_files = Dir::glob("content/*.md")

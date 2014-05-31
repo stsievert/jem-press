@@ -10,9 +10,12 @@ $$\hspace{-2em}\huge e \propto \frac{1}{c}$$
 
 [getting started](getting_started.html)
 
+[configuring](configuring.html)
+
+[latex](latex.html)
+
 [bugs](bugs.html)
 
 [contact](contact.html)
 
-[latex](latex.html)
 

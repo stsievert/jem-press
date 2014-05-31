@@ -24,6 +24,7 @@ ease is inversely proportional to complexity, hence the menu image.
 * no configuration necessary. However, CSS file is well commented (and
   hopefully easy to modify).
 * easy to pick up
+* mobile friendly
 * popular markdown formatting
 * easy for academic/static sites
 * not blog sensitive
