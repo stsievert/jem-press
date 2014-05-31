@@ -22,22 +22,23 @@ body {
     /*content background*/
     background: #ffffff;
     /*sticks to left side of page*/
-    width: auto;
+    width: 75%;
     /*overflow should stay hidden*/
     overflow: hidden;
     /*border width is really menu width*/
-    border-left: 189px solid #f6f6f6;
+    border-left: 181px solid #f6f6f6;
 }
 .right{
     /*really the menu/left column*/
     width: 180px;
     float: left;
-    margin-right: -180px;
+    margin-right: -190px;
     margin-top: 0px;
     margin-left: 0px;
     position: relative;
-    /*border-right: 1px solid black;*/
-    /*border: 1px solid #aaaaaa;*/
+    /*border-right: 1px solid #aaaaaa;*/
+    /*border-top: 1px solid #aaaaaa;*/
+
     text-align: left;
     /*how large are the menu links?*/
     font-size: 0.9em;
