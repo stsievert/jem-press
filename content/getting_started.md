@@ -8,7 +8,7 @@ formatting and everything included.
 ## Content
 Edit the files in `content` to change your content using the popular
 [Markdown][markdown] mark-up language, specifically the [MultiMarkdown][multi]
-flavor.
+flavor. To publish new content:
 
 1. Create new files, `content/new_name.md`. It should end in `.md` to be processed.
 2. Edit `content/menu.md` to include the menu. This is purely markdown flavored
