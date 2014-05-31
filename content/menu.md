@@ -8,8 +8,6 @@ $$\hspace{-1em}\huge e \propto \frac{1}{c}$$
 
 [version/bugs](bugs.html)
 
-[contact](contact.html)
-
 ### user's guide
 [install](install.html)
 
