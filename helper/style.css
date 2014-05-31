@@ -6,11 +6,12 @@ body {
   padding-top: 0px;
   padding-bottom: 10px;
   background-color: white;
-  /*if you want padding on the borders of the screen*/
-  /*padding: 30px;*/
+  /*to have page hug screen*/
+  padding: 0px !important;
+  margin: 0px !important;
 }
 .cols{
-    /*container for both columns. changes (I don't think) apply*/
+    /*container for both columns.*/
     height: auto;
     overflow: hidden;
     margin: 0 auto;
@@ -28,6 +29,11 @@ body {
     /*border width is really menu width*/
     border-left: 181px solid #f6f6f6;
 }
+/*html, body, .left{*/
+    /*[>fill up the whole screen<]*/
+    /*min-height: 100%;*/
+    /*height: 100%;*/
+/*}*/
 .right{
     /*really the menu/left column*/
     width: 180px;
@@ -36,8 +42,6 @@ body {
     margin-top: 0px;
     margin-left: 0px;
     position: relative;
-    /*border-right: 1px solid #aaaaaa;*/
-    /*border-top: 1px solid #aaaaaa;*/
 
     text-align: left;
     /*how large are the menu links?*/
@@ -45,7 +49,12 @@ body {
     line-height: 0.6em;
 }
 .left2{
+    /*the menu-content border*/
     border-left: 1px solid #aaa;
+    /*to get the border to work out right*/
+    margin-top: -15px;
+    padding-bottom: 20px;
+    /*padding-top: -10px;*/
 }
 .right h3{
     /*the menu section formatting*/
@@ -82,12 +91,14 @@ ul {
         clear: both;
         border: 0px solid black;
         width: 100%;
+        border-left: none;
     }
     .right{
         clear: both;
         height: auto;
         width: 100%;
         text-align: center;
+        border-bottom: 1px solid #aaa;
         background: #f6f6f6;
     }
 }
