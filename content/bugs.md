@@ -4,6 +4,7 @@
 * No dates in footer.
 
 ## Versions
+* 0.4: Added favicons from [realfavicon][favicon].
 * 0.3: Added new feature: `ruby update.rb -n new_post`. Spaces not supported
   in filename, opens promptly in default editor.
 * 0.2: Ready for public consumption. Menu goes to bottom of content, textured
@@ -21,6 +22,7 @@ jem-press was developed by [Scott Sievert][scott]. Please [email Scott][email] w
 any bug reports or comments. The [source code][source] is included on Github, and I welcome
 pull requests and issues.
 
+[favicon]:http://realfavicongenerator.net
 [email]:mailto:sieve121@umn.edu
 [scott]:http://scottsievert.github.io
 [source]:https://github.com/scottsievert/jem-press
