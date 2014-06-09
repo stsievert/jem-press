@@ -86,10 +86,17 @@ to center an image.
 <img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 
+## Favicons
+Favicons are generated from [realfavicon][favicon]. I recommend you go here to
+change your image, and replace the icons in helper/favicons/. The code that
+links these favicons is in helper/header.html.
+
 ## LaTeX
 jem-press uses MathJax to render LaTeX. That means you use `$` for inline and
 `$$` for a separate paragraph, just like normal latex.
 
+
+[favicon]:http://realfavicongenerator.net
 [image]:images/space-shuttle.jpg "Image title" width=200px height=200px
 [url-img]:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img
 [multi-docs]:http://fletcher.github.io/peg-multimarkdown/

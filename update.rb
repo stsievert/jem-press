@@ -44,6 +44,7 @@ OptionParser.new do |opts|
         end
         all_files = Dir::glob('*')
         remove('processed_md')
+        remove('favicons')
         remove('style.css')
         remove('solarized.css')
         remove('github.css')
