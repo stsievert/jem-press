@@ -8,7 +8,7 @@
  
 require 'optparse'
 
-about = { "version" => "0.21",
+about = { "version" => "0.40",
           "author" => "Scott Sievert",
           "author_email" => "sieve121@umn.edu",
           "homepage" => "http://scottsievert.github.io/jem-press/"
