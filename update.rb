@@ -102,3 +102,4 @@ end
 `cp -rf content/images/ html/images/ `
 `multimarkdown content/menu.md > html/menu.html`
 `cp -rf helper/* html/`
+
