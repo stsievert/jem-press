@@ -1,5 +1,5 @@
 <p style="text-align: center; margin-left: 0 !important;">
-<img src="images/pearl.jpg" width=150 height=100>
+<img src="images/pearl.jpg" style="border: 1px solid #666;" width=150 height=100>
 </p>
 <!--$$\hspace{-1em}\huge e \propto \frac{1}{c}$$-->
 <!--<i class="fa fa-magnet fa-5x"></i>-->
