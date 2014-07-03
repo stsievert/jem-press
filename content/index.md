@@ -7,7 +7,7 @@ GUIs and look at [Octopress][octo], [Jekyll][jekyll] and other blog-sensitive
 jemdoc the least complex). You just want to write your content, have it look
 decent by default and publish it. You don't want to mess around with themes or CSS files.
 
-jem-press just does that. You write your content in Markdown, run `ruby
+jem-press just does that. You write your content in [Markdown][markdown], run `ruby
 update.rb` and boom. Your site is in `html`, completely formatted. Prime
 candidates seem to be simple and blog-free websites, such as academic websites.
 
@@ -56,4 +56,4 @@ for more details.
 [octo]:http://octopress.org
 [site]:http://staticsitegenerators.net
 [jemdoc]:http://jemdoc.jaboc.net/
-
+[markdown]:https://en.wikipedia.org/wiki/Markdown#Example
