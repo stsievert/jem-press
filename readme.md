@@ -15,15 +15,33 @@ is to download this repo and change the markdown files. Everything else is
 taken care of -- CSS, LaTeX equations, etc. Extensive documentation can be
 found on the wiki.
 
-#### Sample site
+## [Documentation]
+The [documentation] includes all the details on
+
+[documentation]:http://scottsievert.github.io/jem-press/
+[Documentation]:http://scottsievert.github.io/jem-press/
+
+* how to install
+* how to generate site
+* some content tips
+
+Even though the docs are *incredibly* useful, I'll include a couple bullets:
+
+1. It's easiest to clone this repo to get started
+2. All of the content displayed on the pages are in `content/`
+3. Run `cd path/to/jem-press; ruby update.rb` to update your site
+
+## [Sample site]
 The [jem-press documentation site][jem-press] is written in jem-press itself.
 
+[Sample site]:http://scottsievert.github.io/jem-press/
 
 [jem-press]:http://scottsievert.github.io/jem-press/
 [octo]:http://octopress.org
 [jem]:http://jemdoc.jaboc.net/index.html
 
-
+## Todo
+1. Only folders within `images` are copied across. I should implement `find content -type d | xargs cp -r html/`
 
 Features
 =========
@@ -31,4 +49,4 @@ Features
 * easy to pick up
 * popular markdown formatting
 * easy for academic/static sites
-* not blog sensitive
+* not blog sensitive (no posts by date, no search, no keywords, etc)
