@@ -86,6 +86,38 @@ to center an image.
 <img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 
+## Code blocks
+By default, jem-press does code blocks that are not syntax highlighted:
+
+```python
+x = 1
+while True:
+    x += 1
+    if x > 10: break
+print(x)
+```
+
+If syntax highlighting is wanted, I would recommend visiting [hilite.me].
+There you can manually syntax highlight your code and get raw HTML. You can
+paste this directly into your Markdown document.
+
+I found most success with this CSS string:
+
+```css
+padding: 1em;
+```
+
+This will give you
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto; padding: 3em"><pre style="margin: 0; line-height: 125%">x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #008800; font-weight: bold">while</span> <span style="color: #007020">True</span>:
+      x <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+      <span style="color: #008800; font-weight: bold">if</span> x <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">10</span>: <span style="color: #008800; font-weight: bold">break</span>
+<span style="color: #008800; font-weight: bold">print</span>(x)
+</pre></div>
+
+[hilite.me]:http://hilite.me
+
 ## Favicons
 Favicons are generated from [realfavicon][favicon]. I recommend you go here to
 change your image, and replace the icons in helper/favicons/. The code that
