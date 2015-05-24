@@ -12,8 +12,7 @@ good example of the site I'm trying to produce is [the jemdoc website][jem].
 
 Jem-press is supposed to be *simple.* It's designed so that all that's required
 is to download this repo and change the markdown files. Everything else is
-taken care of -- CSS, LaTeX equations, etc. Extensive documentation can be
-found on the wiki.
+taken care of -- CSS, LaTeX equations, etc.
 
 ## [Documentation]
 The [documentation] includes all the details on

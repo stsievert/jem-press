@@ -86,6 +86,7 @@ to center an image.
 <img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 
+
 ## Favicons
 Favicons are generated from [realfavicon][favicon]. I recommend you go here to
 change your image, and replace the icons in helper/favicons/. The code that
