@@ -90,6 +90,35 @@ to center an image.</p>
 <img src="images/space-shuttle.jpg" width=200 height=200>
 </p>
 
+<h2 id="codeblocks">Code blocks</h2>
+
+<p>By default, jem-press does code blocks that are not syntax highlighted:</p>
+
+<pre><code class="python">x = 1
+while True:
+    x += 1
+    if x &gt; 10: break
+print(x)
+</code></pre>
+
+<p>If syntax highlighting is wanted, I would recommend visiting <a href="http://hilite.me">hilite.me</a>.
+There you can manually syntax highlight your code and get raw HTML. You can
+paste this directly into your Markdown document.</p>
+
+<p>I found most success with this CSS string:</p>
+
+<pre><code class="css">padding: 1em;
+</code></pre>
+
+<p>This will give you</p>
+
+<p><!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto; padding: 3em"><pre style="margin: 0; line-height: 125%">x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+<span style="color: #008800; font-weight: bold">while</span> <span style="color: #007020">True</span>:
+ x <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+ <span style="color: #008800; font-weight: bold">if</span> x <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">10</span>: <span style="color: #008800; font-weight: bold">break</span>
+<span style="color: #008800; font-weight: bold">print</span>(x)
+</pre></div></p>
+
 <h2 id="favicons">Favicons</h2>
 
 <p>Favicons are generated from <a href="http://realfavicongenerator.net">realfavicon</a>. I recommend you go here to

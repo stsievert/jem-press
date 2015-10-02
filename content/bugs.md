@@ -2,6 +2,12 @@
 * Menu goes all the way to bottom of screen, but run into issues if content
   shorter than menu. Worst case, use `<br>` at the end of your Markdown file.
 * No dates in footer.
+* Any content to be included must be in the `images/` folder. Any folder you
+  want to link to must go in here; only this folder is copied over to `html/`.
+* There's no syntax highlighting for code blocks. This should be possible with
+  [pygments].
+
+[pygments]:http://pygments.org
 
 ## Versions
 * 0.4: Added favicons from [realfavicon][favicon].
