@@ -1,52 +1,58 @@
-## jem-press
+<a href="https://github.com/scottsievert/jem-press"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 
-You want to create a simple website. You don't want to mess around with any
-GUIs and look at [Octopress][octo], [Jekyll][jekyll] and other blog-sensitive
-[site generators][site], but they're not right. You look at [jemdoc][jemdoc],
-[harp][harp] and [wintersmith][winter], but they all seem too complex (though
-jemdoc the least complex). You just want to write your content, have it look
-decent by default and publish it. You don't want to mess around with themes or CSS files.
+# jem-press
+This is an alternative to [jemdoc], a static site generator. jemdoc is a simple
+site generator, suitable for putting a couple pages up on the internet (neither
+jemdoc or jempress are meant for blogs).
 
-jem-press just does that. You write your content in [Markdown][markdown], run `ruby
-update.rb` and boom. Your site is in `html`, completely formatted. Prime
-candidates seem to be simple and blog-free websites, such as academic websites.
+jemdoc provided inspiration (academic sites, nice layout) but I personally did
+not like the implementation. jemdoc defined it's own markup language and embeds
+latex as PNGs (avoided with [jemdoc+mathjax]). I decided to make my own
+implementation of jemdoc but using Markdown, MathJax and jQuery. These tools
+result in a clean solution.
 
-jem-press is designed to be *easy.* Complexity and ease seem to opose each
-other. This site generator is designed for you to create a site with ease and to
-customize the site with almost equal ease to a small degree. If you're
-interested in drastically changing the site, jem-press is not for you.
+jempress is simple to generate a site with. You write your content in
+[Markdown][markdown], run `ruby update.rb` and your site is in `html/`,
+completely formatted. Prime candidates seem to be simple and blog-free
+websites, such as academic websites.
 
-If [Octopress][octo] and [jemdoc][jemdoc] had a child, they would name it
-jem-press. It would combine the convince of jemdoc with the functionality of
-Octopress. The main differences are jem-press uses the popular Markdown and
-requires no configuration: you just start writing content. jemdoc uses a
-not-very-popular markup syntax and requires some initial setup.  Octopress is
-easy to use but is blog aware and doesn't seem right for these simple website.
+jem-press is designed to be *easy.*  This site generator is designed for you to
+create a site with ease and to customize the site with slightly less ease. If
+you're interested in drastically changing the formatting of this site,
+jem-press is not for you.
 
-## Features
-* simple, feature minimal (deliberately!)
+## Features of jempress
+* $\LaTeX$ equation support with [MathJax] (see? $e^{j\pi} = -1$)
+* Popular formatting language [Markdown] (as used on
+  Reddit/GitHub/StackOverflow/more)
+* designed as alternative to [jemdoc]
 * mobile friendly
-* no configuration necessary. However, CSS file is well commented (and
-  hopefully easy to modify).
-* popular markdown formatting
-* easy for academic/static sites
-* not blog sensitive
-* $\LaTeX$ equation support
+* simple, feature minimal (deliberately!)
+* no configuration necessary
+
+## Other static site generators
+* [jemdoc]
+* [Octopress][octo]
+* [Jekyll][jekyll]
+* [harp]
+* [wintersmith][winter]
+* and there's also a list of other [static site generators][site]...
+
+[jemdoc+mathjax]:http://www.mit.edu/~wsshin/jemdoc+mathjax.html
 
 #### License
-
 <p style="font-size: 10pt">
 Copyright © 2014 Scott Sievert<br>
 
 jem-press is free software; you can redistribute it and/or modify it under the
 terms of the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>  as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. <br>
 
-jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
-<!--[GNU General Public License][gnu] -->
+jem-press distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>
 for more details.
 </p>
 
+[mathjax]:https://www.mathjax.org
 [jem-press-ex]:http://scottsievert.github.io/jem-press/
 [gnu]:http://www.gnu.org/licenses/gpl-3.0.html
 [other]:http://staticsitegenerators.net

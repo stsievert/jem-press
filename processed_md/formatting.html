@@ -27,10 +27,22 @@ etc) or specific file names (<code>menu.md</code>, <code>header.html</code>).</p
 <p>If you want to further customize, you can edit the CSS file (which is
 well-commented!) or edit <code>header.html</code>.</p>
 
+<h2 id="latex">LaTeX</h2>
+
+<p>jem-press uses MathJax to render LaTeX. That means you use <code>$</code> for inline and
+<code>$$</code> for a separate paragraph, just like normal latex. See the <a href="latex.html">latex page</a>
+for more detail.</p>
+
+<p><span class="math">\[\begin{align}
+1 &=\sin^2(x) + \cos^2(x) \\
+&= 2 + e^{j\pi}\\
+&= \int_1^\infty \frac{1}{x^2} dx
+\end{align}\]</span></p>
+
 <h2 id="menu">Menu</h2>
 
 <p>The menu is contained in the file <code>content/menu.md</code> and is pure markdown. To
-include links, use the appropriate syntax with relative links: </p>
+include links, use the appropriate syntax with relative links:</p>
 
 <pre><code>[Link text](relative_file.html)
 
@@ -118,23 +130,3 @@ paste this directly into your Markdown document.</p>
  <span style="color: #008800; font-weight: bold">if</span> x <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">10</span>: <span style="color: #008800; font-weight: bold">break</span>
 <span style="color: #008800; font-weight: bold">print</span>(x)
 </pre></div></p>
-
-<h2 id="favicons">Favicons</h2>
-
-<p>Favicons are generated from <a href="http://realfavicongenerator.net">realfavicon</a>. I recommend you go here to
-change your image, and replace the icons in helper/favicons/. The code that
-links these favicons is in helper/header.html.</p>
-
-<h2 id="fontawesome">Font Awesome</h2>
-
-<p><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> generates great icons that can be embedded in text (meaning
-links work!). To use Font Awesome, look at the <a href="http://fortawesome.github.io/Font-Awesome/icons/">font icon list</a> and
-write <code>&lt;i class=&quot;fa fa-bomb&quot;&gt;&lt;/i&gt;</code> in your Markdown. Then, <i class="fa fa-bomb"></i> gets produced because Font Awesome is da bomb! If you want more examples, look at Font Awesome&#8217;s <a href="http://fortawesome.github.io/Font-Awesome/examples/">documentation</a>.</p>
-
-<p>Note: since we&#8217;re using the CDN, this only works parses once published. To get
-around this, use Font Awesome&#8217;s regular folders or start your own web server.</p>
-
-<h2 id="latex">LaTeX</h2>
-
-<p>jem-press uses MathJax to render LaTeX. That means you use <code>$</code> for inline and
-<code>$$</code> for a separate paragraph, just like normal latex.</p>

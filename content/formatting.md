@@ -25,9 +25,20 @@ etc) or specific file names (`menu.md`, `header.html`).
 If you want to further customize, you can edit the CSS file (which is
 well-commented!) or edit `header.html`.
 
-## Menu 
+## LaTeX
+jem-press uses MathJax to render LaTeX. That means you use `$` for inline and
+`$$` for a separate paragraph, just like normal latex. See the [latex page](latex.html)
+for more detail.
+
+$$\begin{align}
+1 &=\sin^2(x) + \cos^2(x) \\
+&= 2 + e^{j\pi}\\
+&= \int_1^\infty \frac{1}{x^2} dx
+\end{align}$$
+
+## Menu
 The menu is contained in the file `content/menu.md` and is pure markdown. To
-include links, use the appropriate syntax with relative links: 
+include links, use the appropriate syntax with relative links:
 
 ```
 [Link text](relative_file.html)
@@ -117,27 +128,6 @@ This will give you
 </pre></div>
 
 [hilite.me]:http://hilite.me
-
-## Favicons
-Favicons are generated from [realfavicon][favicon]. I recommend you go here to
-change your image, and replace the icons in helper/favicons/. The code that
-links these favicons is in helper/header.html.
-
-## Font Awesome
-[Font Awesome][awe] generates great icons that can be embedded in text (meaning
-links work!). To use Font Awesome, look at the [font icon list][icon-list] and
-write `<i class="fa fa-bomb"></i>` in your Markdown. Then, <i class="fa fa-bomb"></i> gets produced because Font Awesome is da bomb! If you want more examples, look at Font Awesome's [documentation][fa-doc].
-
-Note: since we're using the CDN, this only works parses once published. To get
-around this, use Font Awesome's regular folders or start your own web server.
-
-[fa-doc]:http://fortawesome.github.io/Font-Awesome/examples/
-[icon-list]:http://fortawesome.github.io/Font-Awesome/icons/
-[awe]:http://fortawesome.github.io/Font-Awesome/
-
-## LaTeX
-jem-press uses MathJax to render LaTeX. That means you use `$` for inline and
-`$$` for a separate paragraph, just like normal latex.
 
 
 [favicon]:http://realfavicongenerator.net
