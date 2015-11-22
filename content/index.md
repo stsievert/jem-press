@@ -26,17 +26,9 @@ jem-press is not for you.
 * Popular formatting language [Markdown] (as used on
   Reddit/GitHub/StackOverflow/more)
 * designed as alternative to [jemdoc]
-* mobile friendly
+* mobile friendly (design friendly to any screen size)
 * simple, feature minimal (deliberately!)
 * no configuration necessary
-
-## Other static site generators
-* [jemdoc]
-* [Octopress][octo]
-* [Jekyll][jekyll]
-* [harp]
-* [wintersmith][winter]
-* and there's also a list of other [static site generators][site]...
 
 [jemdoc+mathjax]:http://www.mit.edu/~wsshin/jemdoc+mathjax.html
 
