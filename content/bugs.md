@@ -1,15 +1,15 @@
 ## Bugs
 * Menu goes all the way to bottom of screen, but run into issues if content
-  shorter than menu. Worst case, use `<br>` at the end of your Markdown file.
+  shorter than menu. Worst case, use multiple `<br>`'s at the end of your Markdown file.
 * No dates in footer.
 * Any content to be included must be in the `images/` folder. Any folder you
   want to link to must go in here; only this folder is copied over to `html/`.
-* There's no syntax highlighting for code blocks. This should be possible with
-  [pygments].
 
 [pygments]:http://pygments.org
 
 ## Versions
+* 0.41: Added syntax highlighting with Pandoc (which means multimarkdown is now
+  longer used).
 * 0.4: Added favicons from [realfavicon][favicon].
 * 0.3: Added new feature: `ruby update.rb -n new_post`. Spaces not supported
   in filename, opens promptly in default editor.
@@ -24,9 +24,9 @@
     * center menu image
 
 ## Contact
-jem-press was developed by [Scott Sievert][scott]. Please [email Scott][email] with
-any bug reports or comments. The [source code][source] is included on Github, and I welcome
-pull requests and issues.
+jem-press was developed by [Scott Sievert][scott]. Please [email Scott][email]
+with any bug reports or comments. The [source code][source] is included on
+Github, and I welcome pull requests and issues.
 
 [favicon]:http://realfavicongenerator.net
 [email]:mailto:sieve121@umn.edu

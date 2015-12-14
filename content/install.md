@@ -7,6 +7,9 @@ Two options:
 This will include a sample site, providing you with an example and making it
 easier to edit.
 
+## Dependencies
+* [pandoc] to convert from Markdown to HTML
+
 ## File structure
 * The content of your site is in `content/`. Here, each `.md` file is a
   different page (except `menu.md`) and is written in the Markdown markup
@@ -18,4 +21,5 @@ easier to edit.
 
 For more help, look at the rest of the site.
 
+[pandoc]:http://pandoc.org
 [zip]:https://github.com/scottsievert/jem-press/archive/master.zip
