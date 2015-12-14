@@ -33,6 +33,7 @@ OptionParser.new do |opts|
         exit;
     end
     opts.on('-p', '--publish', 'Write HTML files to jem-press/ and exit') do
+        puts 'Copying the published site (and not publishing again)'
         `cp -rf html/* .`
         exit
     end
@@ -80,7 +81,7 @@ for file in markdown_files
 end
 
 header = Dir::glob("helper/header.html")
-footer = Dir::glob("helper/header.html")
+footer = Dir::glob("helper/footer.html")
 
 # removing all the files in html/
 `rm html/processed_md/*`
