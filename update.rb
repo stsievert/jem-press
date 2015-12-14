@@ -33,6 +33,7 @@ OptionParser.new do |opts|
         exit;
     end
     opts.on('-p', '--publish', 'Write HTML files to jem-press/ and exit') do
+        puts 'Copying /html to / (and not republishing site)'
         `cp -rf html/* .`
         exit
     end
