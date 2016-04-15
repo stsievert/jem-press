@@ -17,8 +17,8 @@ taken care of -- CSS, LaTeX equations, etc.
 ## [Documentation]
 The [documentation] includes all the details on
 
-[documentation]:http://scottsievert.github.io/jem-press/
-[Documentation]:http://scottsievert.github.io/jem-press/
+[documentation]:http://scottsievert.com/jem-press/
+[Documentation]:http://scottsievert.com/jem-press/
 
 * how to install
 * how to generate site
@@ -33,9 +33,9 @@ Even though the docs are *incredibly* useful, I'll include a couple bullets:
 ## [Sample site]
 The [jem-press documentation site][jem-press] is written in jem-press itself.
 
-[Sample site]:http://scottsievert.github.io/jem-press/
+[Sample site]:http://scottsievert.com/jem-press/
 
-[jem-press]:http://scottsievert.github.io/jem-press/
+[jem-press]:http://scottsievert.com/jem-press/
 [octo]:http://octopress.org
 [jem]:http://jemdoc.jaboc.net/index.html
 
