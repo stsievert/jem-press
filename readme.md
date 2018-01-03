@@ -29,6 +29,7 @@ Even though the docs are *incredibly* useful, I'll include a couple bullets:
 1. It's easiest to clone this repo to get started
 2. All of the content displayed on the pages are in `content/`
 3. Run `cd path/to/jem-press; ruby update.rb` to update your site
+4. Open Google Chrome with `--args --allow-file-access-from-files` to use JQuery `.load()`
 
 ## [Sample site]
 The [jem-press documentation site][jem-press] is written in jem-press itself.
