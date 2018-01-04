@@ -94,7 +94,7 @@ for name in names
     html_name = name+'.html';
 
     #`multimarkdown content/#{name}.md > html/processed_md/#{name}.html`
-    `pandoc -s content/#{name}.md -o html/processed_md/#{name}.html`
+    `pandoc -s --mathjax content/#{name}.md -o html/processed_md/#{name}.html`
 
     page = `cat helper/page.html`
     page ['../index.html'] = 'processed_md/'+html_name
@@ -104,4 +104,3 @@ end
 `cp -rf content/images/ html/images/ `
 `multimarkdown content/menu.md > html/menu.html`
 `cp -rf helper/* html/`
-
